@@ -9,12 +9,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               sh "mvm clean compile"
+               sh "mvn clean compile"
             }
         }
         stage('Test') {
                     steps {
-                       sh "mvm test"
+                       sh "mvn test"
                     }
                 }
     }
